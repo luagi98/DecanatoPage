@@ -1,0 +1,235 @@
+import Lightbox from 'bs5-lightbox';
+
+document.querySelectorAll('.my-lightbox-toggle').forEach(el => el.addEventListener('click', Lightbox.initialize));
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--purple-dark: #660033;
+	--purple-medium: #730d40;
+    --purple-light: #a00050;
+    --gray-light: #eaeaea;
+    --white: #f4fffd;
+
+}
+
+body {
+	font-size: 20px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+p {
+	font-size: 22px;
+}
+
+
+/* ------------------------- */
+/* Header */
+/* ------------------------- */
+
+/* ------------------------- */
+/* NAVBAR */
+/* ------------------------- */
+
+
+/* ------------------------- */
+/* Acerca de */
+/* ------------------------- */
+.acerca-de {
+	margin-bottom: 60px;
+}
+
+/* ------------------------- */
+/* Galeria */
+/* ------------------------- */
+.galeria {
+	margin-bottom: 60px;
+}
+
+.galeria img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.contacto {
+	margin-bottom: 60px;
+}
+
+.redes-sociales {
+	padding: 10px;
+	background-color: var(--purple-light);
+}
+
+.redes-sociales img {
+	padding: 5px;
+	border-radius: 100%;
+	width: 50px;
+	transition: .3s ease all;
+}
+
+.redes-sociales img:hover {
+	transform: scale(1.2);
+}
+
+.img-fluid{
+	width: 100px;
+	height: 100px;
+}
+
+/* .align-links{
+	display: flex;
+  	flex-direction: row;
+} */
+
+.align-links a{
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
+
+
+/* ------------------------- */
+/* Mediaqueries */
+/* ------------------------- */
+/* @media screen and (max-width: 992px) {
+	p {
+		font-size: 18px;
+	}
+
+	.contenido-header .texto {
+		font-size: 60px;
+	}
+
+	.menu a {
+		font-size: 20px;
+	}
+
+	.nosotros .titulo,
+	.productos .titulo {
+		font-size: 30px;
+	}
+
+} */
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  /* padding: 20px;
+  font-family: Arial; */
+}
+
+/* Center website */
+.main {
+  /* max-width: 1000px; */
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+/* .fdata {
+	display: block;  Hide all elements by default
+	transition: transform .2s;
+}
+
+.fdata:hover {
+  transform: scale(1.5);  (150% zoom - Note: if the zoom is too large, it will go outside of the viewport)
+} */
+
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.toggle_btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.toggle_btn:hover {
+  background-color: #ddd;
+}
+
+.toggle_btn.active {
+  background-color: #666;
+  color: white;
+}
+
+.expandable_list{
+
+}
+
+.accordion-header{
+	background-color: var(--purple-medium) !important;
+}
+
+.accordion-button{
+
+	background-color: var(--purple-medium);
+	/* opacity: 0.6; */
+	color: white !important;
+
+}
+.accordion-button:after{
+	color: white;
+	background-color: white;
+}
+.accordion-button:not(.collapsed) {
+
+    background-color: var(--purple-light);
+}
+
+.form-select{
+	background-color: #dc3545;
+	color: white;
+}
+
+.image-button{
+	margin:1px;
+	
+	/* align: center; */
+}
+
+#search_button{
+
+}

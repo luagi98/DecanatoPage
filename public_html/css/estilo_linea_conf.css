@@ -1,0 +1,60 @@
+import Lightbox from 'bs5-lightbox';
+
+document.querySelectorAll('.my-lightbox-toggle').forEach(el => el.addEventListener('click', Lightbox.initialize));
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--purple-dark: #660033;
+	--purple-medium: #730d40;
+    --purple-light: #a00050;
+    --gray-light: #eaeaea;
+    --white: #f4fffd;
+
+}
+
+body {
+	font-size: 20px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+p {
+	font-size: 22px;
+}
+
+
+#frame1{
+	width: 300px;
+	height: 300px;
+}
+
+#frame2{
+	width: 300px;
+	height: 300px;
+}
+
+#frame3{
+	width: 300px;
+	height: 300px;
+}
+
+#form-container {
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  background: #fff;
+  padding: 30px;
+  width: 100%;
+
+  position: relative;
+  -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+button{
+	background-color: var(--purple-medium) !important;
+}
