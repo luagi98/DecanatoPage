@@ -1,6 +1,7 @@
 <?php
 
-class Conexion extends PDO{
+class Conexion extends PDO
+{
     private $dbname = "decanatoDB";
     //nombre servidor
     private $host = "localhost";
@@ -9,21 +10,22 @@ class Conexion extends PDO{
     //password usuario
     private $pass = 'n0m3l0';
     //puerto postgreSql
-    private $port = '4000';
+    private $port = 4000;
     private $db;
 
-    public function __construct() {
+    public function __construct()
+    {
         try {
-            $this->db = parent::__construct("mysql:host=$this->host;dbname=$this->dbname;charset=utf8",$this->user,$this->pass);
-        } catch(PDOException $e) {
-            echo  $e->getMessage();
+            $this->db = parent::__construct("mysql:host=$this->host;dbname=$this->dbname;charset=utf8;port=$this->port", $this->user, $this->pass);
+        } catch (PDOException $e) {
+            echo $e->getMessage();
         }
     }
 
-    public function close_con(){
-       $this->db = null;
+    public function close_con()
+    {
+        $this->db = null;
     }
-
 }
 
 ?>

@@ -18,8 +18,15 @@ if(!empty($_REQUEST['historiaId']) and isset($_REQUEST['historiaId'])
     $db = new Conexion();
 
 
-    //Registro imagenes
-    $destino1=$destino2=$destino3="";
+    $getCard = $db -> prepare("SELECT * FROM linea_del_tiempo WHERE historiaId=:historiaId");
+    $getCard->bindValue(':historiaId', $historiaId, PDO::PARAM_INT);
+    $getCard->execute();
+    $card = $getCard->fetch();
+
+    $destino1 = isset($card['ruta_imagen1']) ? $card['ruta_imagen1'] :'';
+    $destino2 = isset($card['ruta_imagen2']) ? $card['ruta_imagen2'] :'';
+    $destino3 = isset($card['ruta_imagen3']) ? $card['ruta_imagen3'] :'';
+    
     if(isset($_FILES['image1']['tmp_name'])){
         $destino1= "public_html/img/img_cards/imgTimeline".($historiaId)."-1.jpg";
         $foto1ruta =$_FILES['image1']['tmp_name'];

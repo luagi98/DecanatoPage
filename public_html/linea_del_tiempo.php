@@ -36,7 +36,12 @@
 
                     $db = new Conexion();
                     $sql = $db->prepare('SELECT * FROM linea_del_tiempo ORDER BY fecha ASC');
-                    $sql-> execute();
+                    try {
+                        $sql-> execute();
+                    } catch (\Throwable $th) {
+                        echo ''. $th->getMessage() .'';
+                    }
+                    
                     $cards = $sql->fetchAll();
                     $cont=0;
                     foreach($cards as $card){
