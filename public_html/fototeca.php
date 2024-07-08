@@ -232,5 +232,20 @@
 
         </script>
         <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.0/dist/index.bundle.min.js"></script>
+        <footer class="containerFooter">
+            <div class="footerCard">
+                <a class="iconFooter" href="mailto:cecyt9@gmail.com"><i class="fas fa-envelope"></i></a>
+                <p class="textFooter">cecyt9@gmail.com</p>
+            </div>
+            <div class="footerCard">
+                <a class="iconFooter" href="https://twitter.com/_cecyt9?s=20&t=1yyaKPE0skghgtUq7I_S5Q"><i class="fab fa-twitter"></i></a>
+                <p class="textFooter">@_cecyt9</p>
+            </div>
+            <div class="footerCard">
+                <a class="iconFooter" href="https://www.facebook.com/Juan-de-Dios-B%C3%A1tiz-Oficial-813458352356480"><i class="fab fa-facebook"></i></a>
+                <p class="textFooter">CECyT 9 Juan de Dios Bátiz</p>
+            </div>
+        </footer>
+        <script src="https://kit.fontawesome.com/f1fe361482.js" crossorigin="anonymous"></script>
     </body>
 </html>

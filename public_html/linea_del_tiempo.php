@@ -89,7 +89,7 @@
 
     <footer class="containerFooter">
         <div class="footerCard">
-            <a class="iconFooter" href="#"><i class="fas fa-envelope"></i></a>
+            <a class="iconFooter" href="mailto:cecyt9@gmail.com"><i class="fas fa-envelope"></i></a>
             <p class="textFooter">cecyt9@gmail.com</p>
         </div>
         <div class="footerCard">
@@ -97,7 +97,7 @@
             <p class="textFooter">@_cecyt9</p>
         </div>
         <div class="footerCard">
-            <a class="iconFooter" href="#"><i class="fab fa-facebook"></i></a>
+            <a class="iconFooter" href="https://www.facebook.com/Juan-de-Dios-B%C3%A1tiz-Oficial-813458352356480"><i class="fab fa-facebook"></i></a>
             <p class="textFooter">CECyT 9 Juan de Dios Bátiz</p>
         </div>
     </footer>

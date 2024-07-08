@@ -28,10 +28,9 @@
 			<div class="col-12 text-center">
 				<h2 class="subtitulo"><span>¿Quien fue Juan de Dios Bátiz?</span></h2>
 				<h3 class="titulo">Juan de Dios Batiz un hombre que ... </h3>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore officiis illum sequi quia doloribus quas consequatur autem inventore soluta voluptatum vero quibusdam illo cum, quod nostrum aspernatur. Autem, amet quasi.
-				</p>
-				<a href="#" class="enlace">Descubre la historia completa</a>
+				<p>Transformó vidas con su pasión por el conocimiento. Desde las aulas, inspiró a generaciones, dejando una huella imborrable en la educación mexicana. Su legado, un faro de sabiduría y dedicación, sigue iluminando el camino de miles de estudiantes.</p>
+				
+				<a onclick="ve_linea_del_tiempo()" class="enlace">Descubre la historia completa</a>
 			</div>
 		</div>
 
@@ -39,7 +38,7 @@
 			<article class="col-12 text-center">
 				<h2 class="subtitulo"><span>Hechos importantes</span></h2>
 				<p class="titulo">Cecyt 9 "Juan de Dios Batiz"</p>
-				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit veniam saepe cum aspernatur neque odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae deserunt perferendis. Lorem ipsum dolor sit amet consectetur.</p>
+				<p>Abrió sus puertas en 1937, impulsado por la visión de su fundador. Este instituto ha sido testigo de innovaciones y logros académicos que han marcado la historia de México, formando generaciones de líderes y profesionales destacados.</p>
 			</article>
 
 			<div class="col-12">
@@ -48,7 +47,7 @@
 						<figure class="producto">
 							<img src="public_html/img/juan-de-dios-batiz/batiz1.png" class="img-fluid mx-auto d-block" alt="">
 							<figcaption class="overlay">
-								<p class="overlay-texto">Descripción pequeña</p>
+								<p class="overlay-texto">Cultivó su pasión con liderazgo</p>
 							</figcaption>
 						</figure>
 					</article>
@@ -57,7 +56,7 @@
 						<figure class="producto">
 							<img src="public_html/img/juan-de-dios-batiz/batiz2.jpg" class="img-fluid mx-auto d-block" alt="">
 							<figcaption class="overlay">
-								<p class="overlay-texto">Descripción pequeña</p>
+								<p class="overlay-texto">Su camino hacia la excelencia</p>
 							</figcaption>
 						</figure>
 					</article>
@@ -66,7 +65,7 @@
 						<figure class="producto">
 							<img src="public_html/img/juan-de-dios-batiz/batiz3.jpg" class="img-fluid mx-auto d-block" alt="">
 							<figcaption class="overlay">
-								<p class="overlay-texto">Descripción pequeña</p>
+								<p class="overlay-texto">Ejemplo de superación</p>
 							</figcaption>
 						</figure>
 					</article>
@@ -75,20 +74,21 @@
 						<figure class="producto">
 							<img src="public_html/img/juan-de-dios-batiz/batiz4.jpg" class="img-fluid mx-auto d-block" alt="">
 							<figcaption class="overlay">
-								<p class="overlay-texto">Descripción pequeña</p>
+								<p class="overlay-texto">Modelo de perseverancia</p>
 							</figcaption>
 						</figure>
 					</article>
 
-					<button class="d-block btn-productos">Ver más fotos</button>
+					<button class="d-block btn-productos" onclick="ve_fototeca()">Ver más fotos</button>
 				</div>
 			</div>
 		</div>
 	</main>
 
 	<div class="separador text-center text-white">
-		<p><q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, eligendi</q></p>
+		<p><q>El politécnico fue mi ilusión y su presencia ha sido mi compañera en esta vida que he  de terminar tranquila y en paz</q></p>
 	</div>
+	
 
 	<div class="container">
 		<div class="row acerca-de justify-content-around">
@@ -99,7 +99,7 @@
 						<p>
 							<strong class="mb-2">Prevocacional 3°</strong>
 							<div class="w-100"></div>
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem totam dolorem error.
+							La juventud es la esperanza de México, y en sus manos está la construcción del futuro.
 						</p>
 					</figcaption>
 				</figure>
@@ -112,7 +112,7 @@
 						<p>
 							<strong class="mb-2">CECyT 9°</strong>
 							<div class="w-100"></div>
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem totam dolorem error.
+							Formar técnicos y profesionales con un alto sentido de responsabilidad social es nuestra misión primordial.
 						</p>
 					</figcaption>
 				</figure>
@@ -146,21 +146,28 @@
 			<div class="w-100 mb-4 "></div>
 			<div>
 				<p class=" d-flex justify-content-center border-bottom border-top">
-					<img src="public_html/img/icons/icon-cellphone.png" alt="">Tel: 1 23 45 67
+					Mar Mediterráneo no. 227, Col. Popotla, c. p. 11400, Alcaldía Miguel Hidalgo, Ciudad de México, CDMX Ciudad de México, Ciudad de México, México
 				</p>
 			</div>
 		</section>
 
-		<footer class="row justify-content-center redes-sociales">
-			<div class="d-flex justify-content-center">
-				<a href="#"><img src="public_html/img/icons/facebook.png" alt=""></a>
-				<a href="#"><img src="public_html/img/icons/twitter.png" alt=""></a>
-				<a href="#"><img src="public_html/img/icons/instagram-new.png" alt=""></a>
-			</div>
-		</footer>
+		
 	</div>
-
-
+	<footer class="containerFooter">
+		<div class="footerCard">
+			<a class="iconFooter" href="mailto:cecyt9@gmail.com"><i class="fas fa-envelope"></i></a>
+			<p class="textFooter">cecyt9@gmail.com</p>
+		</div>
+		<div class="footerCard">
+			<a class="iconFooter" href="https://twitter.com/_cecyt9?s=20&t=1yyaKPE0skghgtUq7I_S5Q"><i class="fab fa-twitter"></i></a>
+			<p class="textFooter">@_cecyt9</p>
+		</div>
+		<div class="footerCard">
+			<a class="iconFooter" href="https://www.facebook.com/Juan-de-Dios-B%C3%A1tiz-Oficial-813458352356480"><i class="fab fa-facebook"></i></a>
+			<p class="textFooter">CECyT 9 Juan de Dios Bátiz</p>
+		</div>
+	</footer>
+	<script src="https://kit.fontawesome.com/f1fe361482.js" crossorigin="anonymous"></script>
 
 </body>
 </html>

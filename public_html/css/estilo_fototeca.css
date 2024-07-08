@@ -1,6 +1,6 @@
 import Lightbox from 'bs5-lightbox';
 
-document.querySelectorAll('.my-lightbox-toggle').forEach(el => el.addEventListener('click', Lightbox.initialize));
+document.querySelectorAll('.my-lightbox-toggle').forEach(el=> el.addEventListener('click', Lightbox.initialize));
 
 * {
 	margin: 0;
@@ -11,9 +11,9 @@ document.querySelectorAll('.my-lightbox-toggle').forEach(el => el.addEventListen
 :root {
 	--purple-dark: #660033;
 	--purple-medium: #730d40;
-    --purple-light: #a00050;
-    --gray-light: #eaeaea;
-    --white: #f4fffd;
+	--purple-light: #a00050;
+	--gray-light: #eaeaea;
+	--white: #f4fffd;
 
 }
 
@@ -76,7 +76,7 @@ p {
 	transform: scale(1.2);
 }
 
-.img-fluid{
+.img-fluid {
 	width: 100px;
 	height: 100px;
 }
@@ -86,7 +86,7 @@ p {
   	flex-direction: row;
 } */
 
-.align-links a{
+.align-links a {
 	padding-left: 0px !important;
 	padding-right: 0px !important;
 }
@@ -118,34 +118,34 @@ p {
 
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  background-color: #f1f1f1;
-  /* padding: 20px;
+	background-color: #f1f1f1;
+	/* padding: 20px;
   font-family: Arial; */
 }
 
 /* Center website */
 .main {
-  /* max-width: 1000px; */
-  margin: auto;
+	/* max-width: 1000px; */
+	margin: auto;
 }
 
 h1 {
-  font-size: 50px;
-  word-break: break-all;
+	font-size: 50px;
+	word-break: break-all;
 }
 
 .row {
-  margin: 10px -16px;
+	margin: 10px -16px;
 }
 
 /* Add padding BETWEEN each column */
 .row,
-.row > .column {
-  padding: 8px;
+.row>.column {
+	padding: 8px;
 }
 
 /* Create three equal columns that floats next to each other */
@@ -161,75 +161,156 @@ h1 {
 
 /* Clear floats after rows */
 .row:after {
-  content: "";
-  display: table;
-  clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
 
 /* Content */
 .content {
-  background-color: white;
-  padding: 10px;
+	background-color: white;
+	padding: 10px;
 }
 
 /* The "show" class is added to the filtered elements */
 .show {
-  display: block;
+	display: block;
 }
 
 /* Style the buttons */
 .toggle_btn {
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  background-color: white;
-  cursor: pointer;
+	border: none;
+	outline: none;
+	padding: 12px 16px;
+	background-color: white;
+	cursor: pointer;
 }
 
 .toggle_btn:hover {
-  background-color: #ddd;
+	background-color: #ddd;
 }
 
 .toggle_btn.active {
-  background-color: #666;
-  color: white;
+	background-color: #666;
+	color: white;
 }
 
-.expandable_list{
+.expandable_list {}
 
-}
-
-.accordion-header{
+.accordion-header {
 	background-color: var(--purple-medium) !important;
 }
 
-.accordion-button{
+.accordion-button {
 
 	background-color: var(--purple-medium);
 	/* opacity: 0.6; */
 	color: white !important;
 
 }
-.accordion-button:after{
+
+.accordion-button:after {
 	color: white;
 	background-color: white;
 }
+
 .accordion-button:not(.collapsed) {
 
-    background-color: var(--purple-light);
+	background-color: var(--purple-light);
 }
 
-.form-select{
+.form-select {
 	background-color: #dc3545;
 	color: white;
 }
 
-.image-button{
-	margin:1px;
-	
+.image-button {
+	margin: 1px;
+
 	/* align: center; */
 }
 
-#search_button{
+#search_button {}
+
+/* -----------------Footer-------------------- */
+
+.containerFooter {
+	width: 100%;
+	min-height: 150px;
+	background: #682444;
+
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.footerCard {
+	max-width: 30%;
+	min-height: 110px;
+	/* background: #2a8ed6; */
+
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.iconFooter {
+	/* background: #e9b819; */
+	font-size: 55px;
+	color: #e7e7e7;
+	margin: 0 10px 0 10px;
+
+	transition: all 0.3s ease-out;
+}
+
+.iconFooter:hover {
+	transform: translateY(-20px);
+}
+
+.textFooter {
+	/* background: #daa14b; */
+	color: #e7e7e7;
+	margin: 0 10px 0 10px;
+	font-size: 20px;
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+}
+
+@media only screen and (max-width: 550px) {
+	.textFooter {
+		display: none;
+	}
+}
+
+/* @media only screen and (max-width: 786px){
+    .textFooter{
+        display: none;
+    }
+} */
+
+
+
+@media only screen and (max-width: 786px) {
+
+	.footerCard {
+		/* background: #2a8ed6; */
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
 
 }
+
+/* -----------------Footer-------------------- */

@@ -3,7 +3,7 @@
 <script src="views/app/js/navbar_functions.js"></script>
 <nav class="navbar navbar-expand-xl navbar-dark menu">
     <div class="container-fluid">
-        <a href="#" class="navbar-brand">
+        <a href="https://www.cecyt9.ipn.mx" class="navbar-brand">
             <img src="public_html/img/icons/cecyt-9-icon.png" height="28" alt="CoolBrand"> Cecyt 9
         </a>
         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -27,7 +27,7 @@
                 ?>
             </div>
             <div class="navbar-nav ms-auto">
-                <a href="#" class="nav-item nav-link">
+                <a href="https://www.ipn.mx" class="nav-item nav-link">
                     <img src="public_html/img/icons/logo-poli-blanco.png" height="28" alt="CoolBrand"> IPN
                 </a>
             </div>

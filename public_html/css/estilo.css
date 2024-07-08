@@ -7,9 +7,9 @@
 :root {
 	--purple-dark: #660033;
 	--purple-medium: #730d40;
-    --purple-light: #a00050;
-    --gray-light: #eaeaea;
-    --white: #f4fffd;
+	--purple-light: #a00050;
+	--gray-light: #eaeaea;
+	--white: #f4fffd;
 }
 
 body {
@@ -114,12 +114,13 @@ p {
 .productos .producto {
 	position: relative;
 	width: 100%;
-    height: 250px;
-    background-color: white;
+	height: 250px;
+	background-color: white;
 }
-.productos .producto img{
 
-    height: 100%;
+.productos .producto img {
+
+	height: 100%;
 }
 
 
@@ -135,7 +136,7 @@ p {
 	transition: .5s ease;
 }
 
-.productos .producto:hover .overlay{
+.productos .producto:hover .overlay {
 	width: 100%;
 	opacity: .8;
 }
@@ -189,15 +190,18 @@ p {
 	align-items: center;
 	justify-content: center;
 	font-size: 24px;
+	font-style: italic;
+	color: #a00050;
 	font-family: 'Noto Serif', serif;
 	padding: 10px;
 }
+
 /* ------------------------- */
 /* Logos vocas */
 /* ------------------------- */
-.logo-icon{
-    height: 100px;
-    width: 100px;
+.logo-icon {
+	height: 100px;
+	width: 100px;
 }
 
 /* ------------------------- */
@@ -262,3 +266,85 @@ p {
 	}
 
 } */
+/* -----------------Footer-------------------- */
+
+.containerFooter {
+	width: 100%;
+	min-height: 150px;
+	background: #682444;
+
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.footerCard {
+	max-width: 30%;
+	min-height: 110px;
+	/* background: #2a8ed6; */
+
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.iconFooter {
+	/* background: #e9b819; */
+	font-size: 55px;
+	color: #e7e7e7;
+	margin: 0 10px 0 10px;
+
+	transition: all 0.3s ease-out;
+}
+
+.iconFooter:hover {
+	transform: translateY(-20px);
+}
+
+.textFooter {
+	/* background: #daa14b; */
+	color: #e7e7e7;
+	margin: 0 10px 0 10px;
+	font-size: 20px;
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+}
+
+@media only screen and (max-width: 550px) {
+	.textFooter {
+		display: none;
+	}
+}
+
+/* @media only screen and (max-width: 786px){
+    .textFooter{
+        display: none;
+    }
+} */
+
+
+
+@media only screen and (max-width: 786px) {
+
+	.footerCard {
+		/* background: #2a8ed6; */
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+}
+
+/* -----------------Footer-------------------- */
