@@ -3,14 +3,14 @@ drop database if exists decanatoDB;
 create database decanatoDB;
 use decanatoDB;
 
-create table usuarios(
+create table decanatoDB.dbo.usuarios(
 	usuarioId  int not null primary key IDENTITY(1,1),
 	username varchar(60) not null,
     contra varchar (60) not null,
     permisos varchar (40) not null
     );
 
-create table fototeca(
+create table decanatoDB.dbo.fototeca(
 	fototecaId int not null primary key IDENTITY(1,1),
     titulo varchar (130) not null,
     descripcion varchar (1200) not null,
@@ -18,7 +18,7 @@ create table fototeca(
     ruta_imagen varchar (90) not null
 );
 
-create table linea_del_tiempo(
+create table decanatoDB.dbo.linea_del_tiempo(
 	historiaId int not null primary key IDENTITY(1,1),
     fecha date not null,
     titulo varchar(130) not null,
@@ -29,14 +29,14 @@ create table linea_del_tiempo(
     ruta_video varchar(900) null
 );
 
-INSERT INTO usuarios (username, contra, permisos) 
-VALUES ('sos', 'sos', '1');
+INSERT INTO decanatoDB.dbo.usuarios (username, contra, permisos) 
+VALUES ('luis.garcia_1998@hotmail.com', 'luagi291', '1');
 
-select * from usuarios;
+select * from decanatoDB.dbo.usuarios;
 
 -- insert default images
 
-select * from fototeca;
+select * from decanatoDB.dbo.fototeca;
 
 
 --select year(fecha) as availible_year from fototeca group by availible_year order by availible_year desc;
@@ -45,7 +45,7 @@ select * from fototeca;
 
 
 
-insert into fototeca (titulo, descripcion, fecha, ruta_imagen)
+insert into decanatoDB.dbo.fototeca (titulo, descripcion, fecha, ruta_imagen)
 values
     ('Escuela de Preaprendizaje Número 3', '', '0001-01-01', 'fototecaImg/Esc_Preap_3.jpg'),
     ('Salon Escuela de Preaprendizaje Número 3', '', '0001-01-01', 'fototecaImg/Salon_Esc_Preap_3.jpg'),
