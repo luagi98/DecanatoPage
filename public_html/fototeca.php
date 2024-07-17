@@ -40,7 +40,8 @@
         <?php include('public_html/overall/navbar.php');
 
             $db = new Conexion();
-            $sql = $db->prepare('SELECT year(fecha) AS availible_year FROM fototeca GROUP BY availible_year ORDER BY availible_year DESC');
+            $sql = $db->prepare('SELECT YEAR(fecha) AS availible_year FROM fototeca GROUP BY YEAR(fecha) ORDER BY availible_year DESC;
+');
             $sql-> execute();
             $years = $sql->fetchAll();
         ?>

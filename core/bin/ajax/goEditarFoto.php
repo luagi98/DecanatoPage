@@ -17,10 +17,16 @@ if(!empty($_REQUEST['fototecaId']) and isset($_REQUEST['fototecaId'])
 
     $db = new Conexion();
 
+    $getCard = $db -> prepare("SELECT * FROM fototeca WHERE fototecaId=:fototecaId");
+    $getCard->bindValue(':fototecaId', $fototecaId, PDO::PARAM_INT);
+    $getCard->execute();
+    $card = $getCard->fetch();
+
 
     //Registro imagenes
-    $destino= "fototecaImg/foto".($fototecaId).".jpg";
+    $destino = isset($card['ruta_imagen']) ? $card['ruta_imagen'] :'';
     if(isset($_FILES['image']['tmp_name'])){
+        $destino= "fototecaImg/foto".($fototecaId).".jpg";
         $foto1ruta =$_FILES['image']['tmp_name'];
         copy($foto1ruta,$destino);
     }

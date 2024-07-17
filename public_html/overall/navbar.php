@@ -15,7 +15,7 @@
                 <a onclick="ve_fototeca()" class="nav-item nav-link <?php if(isset($_GET['view']) and $_GET['view']=='fototeca') echo ' active'; ?>">Fototeca</a>
                 <!--<a onclick="ve_exposiciones()" class="nav-item nav-link <?php if(isset($_GET['view']) and $_GET['view']=='exposiciones') echo ' active'; ?>">Exposiciones</a>
                 <a onclick="ve_competencias()" class="nav-item nav-link <?php if(isset($_GET['view']) and $_GET['view']=='competencias') echo ' active'; ?>">Competencias</a> -->
-                <a onclick="ve_linea_del_tiempo()" class="nav-item nav-link <?php if(isset($_GET['view']) and $_GET['view']=='linea_del_tiempo') echo ' active'; ?>">Linea del tiempo</a>
+                <a onclick="ve_linea_del_tiempo()" class="nav-item nav-link <?php if(isset($_GET['view']) and $_GET['view']=='linea_del_tiempo') echo ' active'; ?>">Línea del tiempo</a>
                 <?php
                     if(isset($_SESSION['usuarioId'])){
                         echo('

@@ -14,11 +14,11 @@ if(!empty($_REQUEST['title']) and isset($_REQUEST['title'])
 
 
     $db = new Conexion();
-    $maxIdSql = $db->prepare("SELECT MAX(historiaId) FROM linea_del_tiempo");
+    $maxIdSql = $db->prepare("SELECT MAX(historiaId) AS max FROM linea_del_tiempo");
     $maxIdSql-> execute();
 
     $max = $maxIdSql->fetch();
-    $idStory = $max[0]+1;
+    $idStory = $max['max']+1;
 
     //Registro imagenes
     $destino1=$destino2=$destino3="";
@@ -40,7 +40,7 @@ if(!empty($_REQUEST['title']) and isset($_REQUEST['title'])
 
     //Registro DB
 
-    $sql = $db -> prepare('INSERT INTO linea_del_tiempo VALUES (0, :date,:title, :desc, :rimg1,:rimg2,:rimg3,:rvideo)');
+    $sql = $db -> prepare('INSERT INTO linea_del_tiempo (fecha,titulo,descripcion,ruta_imagen1,ruta_imagen2,ruta_imagen3,ruta_video) VALUES (:date,:title, :desc, :rimg1,:rimg2,:rimg3,:rvideo)');
     $sql->bindValue(':date', $date, PDO::PARAM_STR);
     $sql->bindValue(':title', $title, PDO::PARAM_STR);
     $sql->bindValue(':desc', $desc, PDO::PARAM_STR);

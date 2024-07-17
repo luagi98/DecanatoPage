@@ -26,8 +26,8 @@
         <br>
 		<div class="row nosotros justify-content-center">
 			<div class="col-12 text-center">
-				<h2 class="subtitulo"><span>¿Quien fue Juan de Dios Bátiz?</span></h2>
-				<h3 class="titulo">Juan de Dios Batiz un hombre que ... </h3>
+				<h2 class="subtitulo"><span>¿Quién fue Juan de Dios Bátiz?</span></h2>
+				<h3 class="titulo">Juan de Dios Bátiz un hombre que ... </h3>
 				<p>Transformó vidas con su pasión por el conocimiento. Desde las aulas, inspiró a generaciones, dejando una huella imborrable en la educación mexicana. Su legado, un faro de sabiduría y dedicación, sigue iluminando el camino de miles de estudiantes.</p>
 				
 				<a onclick="ve_linea_del_tiempo()" class="enlace">Descubre la historia completa</a>
@@ -37,7 +37,7 @@
 		<div class="row productos">
 			<article class="col-12 text-center">
 				<h2 class="subtitulo"><span>Hechos importantes</span></h2>
-				<p class="titulo">Cecyt 9 "Juan de Dios Batiz"</p>
+				<p class="titulo">Cecyt 9 "Juan de Dios Bátiz"</p>
 				<p>Abrió sus puertas en 1937, impulsado por la visión de su fundador. Este instituto ha sido testigo de innovaciones y logros académicos que han marcado la historia de México, formando generaciones de líderes y profesionales destacados.</p>
 			</article>
 
@@ -137,7 +137,7 @@
 	<div class="container-fluid">
 		<section class="contacto row justify-content-center">
 			<div class="col-12 col-md-9 text-center">
-				<h2 class="subtitulo"><span>Contactanos</span></h2>
+				<h2 class="subtitulo"><span>Contáctanos</span></h2>
 			</div>
 
 			<iframe class="col-12 col-md-9" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235.12745179823006!2d-99.17517455395583!3d19.45387540165219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdffeaf6b0a85d%3A0xb6ad4ff925a0d906!2sCentro%20Estudios%20Cient%C3%ADficos%20y%20Tecnol%C3%B3gicos%20(CECyT%209)%20%22Juan%20de%20Dios%20B%C3%A1tiz%22!5e0!3m2!1ses-419!2smx!4v1647907032050!5m2!1ses-419!2smx" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
@@ -145,8 +145,14 @@
 
 			<div class="w-100 mb-4 "></div>
 			<div>
-				<p class=" d-flex justify-content-center border-bottom border-top">
-					Mar Mediterráneo no. 227, Col. Popotla, c. p. 11400, Alcaldía Miguel Hidalgo, Ciudad de México, CDMX Ciudad de México, Ciudad de México, México
+				<p class=" d-flex justify-content-center border-top">
+					Correo Electronico: mialvarez@ipn.mx
+				</p>
+				<p class=" d-flex justify-content-center">	
+					Telefono: +52(55) 5729-6000 ext. 63817
+				</p>
+				<p class=" d-flex justify-content-center border-bottom">	
+					Dirección: Mar Mediterráneo no. 227, Col. Popotla, c. p. 11400, Alcaldía Miguel Hidalgo, Ciudad de México, CDMX Ciudad de México, Ciudad de México, México.
 				</p>
 			</div>
 		</section>

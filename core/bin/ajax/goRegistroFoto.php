@@ -14,11 +14,11 @@ if(!empty($_REQUEST['title']) and isset($_REQUEST['title'])
 
 
     $db = new Conexion();
-    $maxIdSql = $db->prepare("SELECT MAX(fototecaId) FROM fototeca");
+    $maxIdSql = $db->prepare("SELECT MAX(fototecaId) AS max FROM fototeca");
     $maxIdSql-> execute();
 
     $max = $maxIdSql->fetch();
-    $idFoto = $max[0]+1;
+    $idFoto = $max['max']+1;
 
     //Registro imagenes
     $foto1ruta =$_FILES['image']['tmp_name'];
@@ -29,7 +29,7 @@ if(!empty($_REQUEST['title']) and isset($_REQUEST['title'])
 
     //Registro DB
 
-    $sql = $db -> prepare('INSERT INTO fototeca VALUES (0,:title, :desc, :date, :destino)');
+    $sql = $db -> prepare('INSERT INTO fototeca (titulo, descripcion, fecha, ruta_imagen) VALUES (:title, :desc, :date, :destino)');
     $sql->bindValue(':title', $title, PDO::PARAM_STR);
     $sql->bindValue(':desc', $desc, PDO::PARAM_STR);
     $sql->bindValue(':date', $date, PDO::PARAM_STR);
