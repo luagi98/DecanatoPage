@@ -149,7 +149,7 @@
 					Correo Electronico: mialvarez@ipn.mx
 				</p>
 				<p class=" d-flex justify-content-center">	
-					Telefono: +52(55) 5729-6000 ext. 63817
+					Teléfono: +52(55) 5729-6000 ext. 63817
 				</p>
 				<p class=" d-flex justify-content-center border-bottom">	
 					Dirección: Mar Mediterráneo no. 227, Col. Popotla, c. p. 11400, Alcaldía Miguel Hidalgo, Ciudad de México, CDMX Ciudad de México, Ciudad de México, México.
