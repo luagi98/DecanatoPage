@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Página Decanato Cecyt 9</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
 	<link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,700,700i|Open+Sans:400,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="public_html/css/estilo.css">
-	
+
 </head>
+
 <body>
 
 
-	<?php include('public_html/overall/navbar.php'); ?>
+	<?php include 'public_html/overall/navbar.php'; ?>
 
-    <div class="sos">
+	<div class="sos">
 
-    </div>
+	</div>
 
 	<main class="container">
-        <h1 class="titulo text-center"> Antecedentes</h1>
-        <br>
+		<h1 class="titulo text-center"> Antecedentes</h1>
+		<br>
 		<div class="row nosotros justify-content-center">
 			<div class="col-12 text-center">
 				<h2 class="subtitulo"><span>¿Quién fue Juan de Dios Bátiz?</span></h2>
 				<h3 class="titulo">Juan de Dios Bátiz un hombre que ... </h3>
-				<p>Transformó vidas con su pasión por el conocimiento. Desde las aulas, inspiró a generaciones, dejando una huella imborrable en la educación mexicana. Su legado, un faro de sabiduría y dedicación, sigue iluminando el camino de miles de estudiantes.</p>
-				
+				<p>Transformó vidas con su pasión por el conocimiento. Desde las aulas, inspiró a generaciones, dejando una huella imborrable en la educación mexicana. Su legado, un faro de sabiduría y dedicación que sigue iluminando el camino de miles de estudiantes.</p>
+
 				<a onclick="ve_linea_del_tiempo()" class="enlace">Descubre la historia completa</a>
 			</div>
 		</div>
@@ -38,7 +40,7 @@
 			<article class="col-12 text-center">
 				<h2 class="subtitulo"><span>Hechos importantes</span></h2>
 				<p class="titulo">Cecyt 9 "Juan de Dios Bátiz"</p>
-				<p>Abrió sus puertas en 1937, impulsado por la visión de su fundador. Este instituto ha sido testigo de innovaciones y logros académicos que han marcado la historia de México, formando generaciones de líderes y profesionales destacados.</p>
+				<p>Abrió sus puertas en 1935, impulsado por la visión de su fundador, el Ing. Juan de Dios Bátiz. Este CECyT ha sido testigo de innovaciones y logros académicos que han marcado la historia de la juventud mexicana, formando generaciones de líderes y profesionales destacados.</p>
 			</article>
 
 			<div class="col-12">
@@ -85,39 +87,27 @@
 		</div>
 	</main>
 
-	<div class="separador text-center text-white">
-		<p><q>El politécnico fue mi ilusión y su presencia ha sido mi compañera en esta vida que he  de terminar tranquila y en paz</q></p>
+	<div class="separador text-center text-white px-5">
+		<p><q>El politécnico fue mi ilusión y su presencia ha sido mi compañera en esta vida que he de terminar tranquila y en paz.</q></p>
 	</div>
-	
+
 
 	<div class="container">
-		<div class="row acerca-de justify-content-around">
-			<article class="col-10 col-sm-5">
-				<figure class="text-center">
-					<img class="logo-icon" src="public_html/img/icons/DGEST.png" alt="">
-					<figcaption>
-						<p>
-							<strong class="mb-2">Prevocacional 3°</strong>
-							<div class="w-100"></div>
-							La juventud es la esperanza de México, y en sus manos está la construcción del futuro.
-						</p>
-					</figcaption>
-				</figure>
-			</article>
+		<div class="row acerca-de align-items-center g-0">
+			<!-- Columna para la imagen -->
+			<div class="col-6 col-md-4 text-center">
+				<img class="logo-icon destacado" src="public_html/img/icons/cecyt-9-icon.png" alt="Icono CECyT 9">
+			</div>
 
-			<article class="col-10 col-sm-5">
-				<figure class="text-center">
-					<img class="logo-icon" src="public_html/img/icons/cecyt-9-icon.png" alt="">
-					<figcaption>
-						<p>
-							<strong class="mb-2">CECyT 9°</strong>
-							<div class="w-100"></div>
-							Formar técnicos y profesionales con un alto sentido de responsabilidad social es nuestra misión primordial.
-						</p>
-					</figcaption>
-				</figure>
-			</article>
+			<!-- Columna para el texto -->
+			<div class="col-6 col-md-8">
+				<p class="texto-reducido">
+					<strong class="mb-2">CECyT 9°</strong><br>
+					Formar técnicos y profesionales con un alto sentido de responsabilidad social es nuestra misión primordial.
+				</p>
+			</div>
 		</div>
+
 	</div>
 
 	<div class="container-fluid px-0 galeria">
@@ -148,16 +138,16 @@
 				<p class=" d-flex justify-content-center border-top">
 					Correo Electronico: mialvarez@ipn.mx
 				</p>
-				<p class=" d-flex justify-content-center">	
-					Teléfono: +52(55) 5729-6000 ext. 63817
+				<p class=" d-flex justify-content-center">
+					Teléfono: +52 55 5729 6000 ext. 63817
 				</p>
-				<p class=" d-flex justify-content-center border-bottom">	
+				<p class=" d-flex justify-content-center border-bottom text-center">
 					Dirección: Mar Mediterráneo no. 227, Col. Popotla, c. p. 11400, Alcaldía Miguel Hidalgo, Ciudad de México, CDMX Ciudad de México, Ciudad de México, México.
 				</p>
 			</div>
 		</section>
 
-		
+
 	</div>
 	<footer class="containerFooter">
 		<div class="footerCard">
@@ -176,4 +166,5 @@
 	<script src="https://kit.fontawesome.com/f1fe361482.js" crossorigin="anonymous"></script>
 
 </body>
+
 </html>
